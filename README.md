@@ -41,8 +41,8 @@ npm test
 
 ## Próximos passos
 
-- [ ] Validar a entrada (recusar `a` e `b` que não são números)
-- [ ] Responder erros com o status HTTP correto (400 Bad Request)
+- [x] Validar a entrada (recusar `a` e `b` que não são números)
+- [x] Responder erros com o status HTTP correto (400 Bad Request)
 - [ ] Mover a lógica para um *service* e testar cada operação
 - [ ] Documentar a API com Swagger
 
