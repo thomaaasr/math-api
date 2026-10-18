@@ -12,7 +12,10 @@ prática do curso de *API Development com Node.js* (Impacta).
 | GET | `/math/multiplicacao` | `/math/multiplicacao?a=3&b=7` | `{ "resultado": 21 }` |
 | GET | `/math/divisao` | `/math/divisao?a=9&b=3` | `{ "resultado": 3 }` |
 
-A divisão por zero é tratada e devolve `{ "erro": "Divisão por zero não é permitida" }`.
+Entradas inválidas são recusadas com **400 Bad Request**:
+
+- `a` ou `b` ausente ou que não é número → `O parâmetro "a" precisa ser um número.`
+- divisão por zero → `Divisão por zero não é permitida`
 
 ## Como rodar
 
@@ -38,12 +41,14 @@ npm test
 - Rotas com `@Get` e leitura de parâmetros com `@Query`
 - Tratamento de caso de erro (divisão por zero)
 - Testes unitários com **Jest**
+- Separar responsabilidades: o **controller** valida a entrada e o **service** faz as contas
+- **Injeção de dependência**: o NestJS entrega o service pronto ao controller
 
 ## Próximos passos
 
 - [x] Validar a entrada (recusar `a` e `b` que não são números)
 - [x] Responder erros com o status HTTP correto (400 Bad Request)
-- [ ] Mover a lógica para um *service* e testar cada operação
+- [x] Mover a lógica para um *service* e testar cada operação
 - [ ] Documentar a API com Swagger
 
 ## Tecnologias
