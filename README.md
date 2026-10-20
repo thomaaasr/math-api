@@ -53,7 +53,8 @@ npm test
 - [x] Responder erros com o status HTTP correto (400 Bad Request)
 - [x] Mover a lógica para um *service* e testar cada operação
 - [x] Documentar a API com Swagger
-- [ ] Atualizar dependências e corrigir vulnerabilidades conhecidas
+- [x] Atualizar dependências e corrigir vulnerabilidades conhecidas
+- [ ] Migrar para o NestJS 12 (resolve as vulnerabilidades moderadas restantes)
 
 ## Tecnologias
 
