@@ -21,9 +21,6 @@ Entradas inválidas são recusadas com **400 Bad Request**:
 
 Pré-requisito: [Node.js](https://nodejs.org) 20 ou superior.
 
-A documentação interativa (Swagger) fica em `http://localhost:3000/docs`: lá dá para
-ver todas as rotas, exemplos e erros possíveis, e testar cada uma pelo navegador.
-
 ```bash
 npm install
 npm run start:dev
@@ -31,6 +28,9 @@ npm run start:dev
 
 A API sobe em `http://localhost:3000`. Teste no navegador:
 `http://localhost:3000/math/soma?a=2&b=3`
+
+A documentação interativa (Swagger) fica em `http://localhost:3000/docs`: lá dá para
+ver todas as rotas, exemplos e erros possíveis, e testar cada uma pelo navegador.
 
 ## Testes
 
@@ -53,6 +53,7 @@ npm test
 - [x] Responder erros com o status HTTP correto (400 Bad Request)
 - [x] Mover a lógica para um *service* e testar cada operação
 - [x] Documentar a API com Swagger
+- [ ] Atualizar dependências e corrigir vulnerabilidades conhecidas
 
 ## Tecnologias
 
