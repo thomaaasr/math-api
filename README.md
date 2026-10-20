@@ -21,6 +21,9 @@ Entradas inválidas são recusadas com **400 Bad Request**:
 
 Pré-requisito: [Node.js](https://nodejs.org) 20 ou superior.
 
+A documentação interativa (Swagger) fica em `http://localhost:3000/docs`: lá dá para
+ver todas as rotas, exemplos e erros possíveis, e testar cada uma pelo navegador.
+
 ```bash
 npm install
 npm run start:dev
@@ -49,8 +52,8 @@ npm test
 - [x] Validar a entrada (recusar `a` e `b` que não são números)
 - [x] Responder erros com o status HTTP correto (400 Bad Request)
 - [x] Mover a lógica para um *service* e testar cada operação
-- [ ] Documentar a API com Swagger
+- [x] Documentar a API com Swagger
 
 ## Tecnologias
 
-`TypeScript` `Node.js` `NestJS` `Jest`
+`TypeScript` `Node.js` `NestJS` `Jest` `Swagger`
