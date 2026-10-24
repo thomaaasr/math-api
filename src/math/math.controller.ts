@@ -1,6 +1,6 @@
 import { applyDecorators, BadRequestException, Controller, Get, Query } from '@nestjs/common';
 import { ApiBadRequestResponse, ApiOkResponse, ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
-import { MathService } from './math.service';
+import { MathService } from './math.service.js';
 
 // Junta a documentação do Swagger que é igual nas quatro operações.
 function DocumentaOperacao(

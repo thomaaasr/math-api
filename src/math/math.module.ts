@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { MathController } from './math.controller';
-import { MathService } from './math.service';
+import { MathController } from './math.controller.js';
+import { MathService } from './math.service.js';
 
 @Module({
   controllers: [MathController],

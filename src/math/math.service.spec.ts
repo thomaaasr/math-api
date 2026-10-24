@@ -1,6 +1,6 @@
 import { BadRequestException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { MathService } from './math.service';
+import { MathService } from './math.service.js';
 
 describe('MathService', () => {
   let service: MathService;

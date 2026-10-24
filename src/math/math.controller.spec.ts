@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { MathController } from './math.controller';
-import { MathService } from './math.service';
+import { MathController } from './math.controller.js';
+import { MathService } from './math.service.js';
 
 describe('MathController', () => {
   let controller: MathController;
