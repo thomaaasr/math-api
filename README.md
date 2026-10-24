@@ -19,7 +19,7 @@ Entradas inválidas são recusadas com **400 Bad Request**:
 
 ## Como rodar
 
-Pré-requisito: [Node.js](https://nodejs.org) 20 ou superior.
+Pré-requisito: [Node.js](https://nodejs.org) 24.15 ou superior.
 
 ```bash
 npm install
@@ -35,7 +35,8 @@ ver todas as rotas, exemplos e erros possíveis, e testar cada uma pelo navegado
 ## Testes
 
 ```bash
-npm test
+npm test          # testes unitários
+npm run test:e2e  # teste de ponta a ponta (sobe a aplicação e faz uma requisição real)
 ```
 
 ## O que pratiquei
@@ -43,9 +44,10 @@ npm test
 - Estrutura de um projeto NestJS: **módulos**, **controllers** e **services**
 - Rotas com `@Get` e leitura de parâmetros com `@Query`
 - Tratamento de caso de erro (divisão por zero)
-- Testes unitários com **Jest**
+- Testes unitários e de ponta a ponta com **Vitest**
 - Separar responsabilidades: o **controller** valida a entrada e o **service** faz as contas
 - **Injeção de dependência**: o NestJS entrega o service pronto ao controller
+- **Migração do NestJS 11 para o 12** em etapas: troca do Jest pelo Vitest, conversão para ESM e atualização dos pacotes, com os testes passando a cada passo
 
 ## Próximos passos
 
@@ -54,8 +56,8 @@ npm test
 - [x] Mover a lógica para um *service* e testar cada operação
 - [x] Documentar a API com Swagger
 - [x] Atualizar dependências e corrigir vulnerabilidades conhecidas
-- [ ] Migrar para o NestJS 12 (resolve as vulnerabilidades moderadas restantes)
+- [X] Migrar para o NestJS 12 (resolve as vulnerabilidades moderadas restantes)
 
 ## Tecnologias
 
-`TypeScript` `Node.js` `NestJS` `Jest` `Swagger`
+`TypeScript` `Node.js` `NestJS` `Vitest` `Swagger`
