@@ -56,7 +56,7 @@ npm run test:e2e  # teste de ponta a ponta (sobe a aplicação e faz uma requisi
 - [x] Mover a lógica para um *service* e testar cada operação
 - [x] Documentar a API com Swagger
 - [x] Atualizar dependências e corrigir vulnerabilidades conhecidas
-- [X] Migrar para o NestJS 12 (resolve as vulnerabilidades moderadas restantes)
+- [x] Migrar para o NestJS 12 (ESM, Vitest e TypeScript 6, com 0 vulnerabilidades)
 
 ## Tecnologias
 
