@@ -1,16 +1,18 @@
 # Math API
 
+[![CI](https://github.com/thomaaasr/math-api/actions/workflows/ci.yml/badge.svg)](https://github.com/thomaaasr/math-api/actions/workflows/ci.yml)
+
 API REST de operações matemáticas, construída com **NestJS** e **TypeScript** como
-prática do curso de *API Development com Node.js* (Impacta).
+prática do curso de _API Development com Node.js_ (Impacta).
 
 ## O que ela faz
 
-| Método | Rota | Exemplo | Resposta |
-|---|---|---|---|
-| GET | `/math/soma` | `/math/soma?a=2&b=3` | `{ "resultado": 5 }` |
-| GET | `/math/subtracao` | `/math/subtracao?a=10&b=4` | `{ "resultado": 6 }` |
-| GET | `/math/multiplicacao` | `/math/multiplicacao?a=3&b=7` | `{ "resultado": 21 }` |
-| GET | `/math/divisao` | `/math/divisao?a=9&b=3` | `{ "resultado": 3 }` |
+| Método | Rota                  | Exemplo                       | Resposta              |
+| ------ | --------------------- | ----------------------------- | --------------------- |
+| GET    | `/math/soma`          | `/math/soma?a=2&b=3`          | `{ "resultado": 5 }`  |
+| GET    | `/math/subtracao`     | `/math/subtracao?a=10&b=4`    | `{ "resultado": 6 }`  |
+| GET    | `/math/multiplicacao` | `/math/multiplicacao?a=3&b=7` | `{ "resultado": 21 }` |
+| GET    | `/math/divisao`       | `/math/divisao?a=9&b=3`       | `{ "resultado": 3 }`  |
 
 Entradas inválidas são recusadas com **400 Bad Request**:
 
@@ -53,7 +55,7 @@ npm run test:e2e  # teste de ponta a ponta (sobe a aplicação e faz uma requisi
 
 - [x] Validar a entrada (recusar `a` e `b` que não são números)
 - [x] Responder erros com o status HTTP correto (400 Bad Request)
-- [x] Mover a lógica para um *service* e testar cada operação
+- [x] Mover a lógica para um _service_ e testar cada operação
 - [x] Documentar a API com Swagger
 - [x] Atualizar dependências e corrigir vulnerabilidades conhecidas
 - [x] Migrar para o NestJS 12 (ESM, Vitest e TypeScript 6, com 0 vulnerabilidades)
