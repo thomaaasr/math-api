@@ -52,7 +52,11 @@ export class MathController {
   }
 
   @Get('divisao')
-  @DocumentaOperacao('Divide a ÷ b', { a: 9, b: 3, resultado: 3 }, 'Parâmetro ausente, que não é número, ou divisão por zero')
+  @DocumentaOperacao(
+    'Divide a ÷ b',
+    { a: 9, b: 3, resultado: 3 },
+    'Parâmetro ausente, que não é número, ou divisão por zero',
+  )
   divisao(@Query('a') a: string, @Query('b') b: string) {
     return { resultado: this.mathService.divisao(this.toNumber(a, 'a'), this.toNumber(b, 'b')) };
   }
